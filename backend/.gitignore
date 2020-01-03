@@ -1,0 +1,6 @@
+.env
+.nyc_output
+
+credentials
+node_modules
+temp
