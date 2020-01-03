@@ -1,12 +1,12 @@
 const Fastify = require('fastify')
 const config = require('./config')
-const controllers = require('./controllers')
+const routes = require('./routes')
 
 const buildFastify = () => {
   const fastify = Fastify({
     logger: config.isLoggerEnable
   })
-  fastify.register(controllers.root)
+  fastify.register(routes.root)
 
   return fastify
 }

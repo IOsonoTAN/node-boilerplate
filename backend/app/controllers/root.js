@@ -1,9 +1,7 @@
-const routesRoot = (fastify, opts, next) => {
-  fastify.get('/', (req, reply) => {
-    reply.send({ status: 'OK' })
-  })
-
-  next()
+const homepage = async (req, rep) => {
+  rep.send({ status: 'OK' })
 }
 
-module.exports = routesRoot
+module.exports = {
+  homepage
+}
