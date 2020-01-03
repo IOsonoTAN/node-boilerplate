@@ -6,6 +6,8 @@ const buildFastify = () => {
   const fastify = Fastify({
     logger: config.isLoggerEnable
   })
+
+  // Routers
   fastify.register(routes.root)
 
   return fastify

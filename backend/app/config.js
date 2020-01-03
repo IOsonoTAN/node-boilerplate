@@ -5,6 +5,9 @@ const config = {
   port: process.env.PORT || 3000,
   logger: {
     enable: isTrueBoolean(process.env.LOGGER_ENABLE) || true
+  },
+  mongodb: {
+    uri: process.env.MONGO_DATABASE_URI || 'mongodb://127.0.0.1/se-valentine'
   }
 }
 const isProduction = (config.env === 'production')
